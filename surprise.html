@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(to bottom, #ffcccc, #ff99cc);
+            font-family: "Arial", sans-serif;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .heart {
+            font-size: 100px;
+            color: red;
+            animation: heartbeat 1.5s infinite ease-in-out;
+            margin-bottom: 30px;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            gap: 20px;
+        }
+
+        .card {
+            width: 32%; /* Making sure there are 3 cards per row */
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        #backBtn {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background: darkred;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 2px 2px 10px black;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #backBtn:hover {
+            transform: scale(1.1);
+            background: red;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 48%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 100%;
+            }
+        }
+	p{
+font-family: Lucida Handwriting;
+}
+    </style>
+</head>
+<body>
+
+    <h1>I LOVE YOU ❤️</h1>
+	<p> All of the days I have been with you is as special as it can be I love you from the moon and back. Thank you for all your Love and I wish you a very Happy birthday And all of it in the mere future </p>
+    <div class="heart">❤️</div>
+
+    <div class="card-container">
+        <div class="card"><img src="C:\Users\HONEY\OneDrive\Pictures\Camera Roll\IMG-20250301-WA0018.jpg"></div>
+        <div class="card"><img src="C:\Users\HONEY\OneDrive\Pictures\Camera Roll\IMG-20250301-WA0019.jpg"></div>
+        <div class="card"><img src="C:\Users\HONEY\OneDrive\Pictures\Camera Roll\IMG-20250301-WA0020.jpg"></div>
+        <div class="card"><img src="C:\Users\HONEY\OneDrive\Pictures\Camera Roll\IMG-20250301-WA0021.jpg"></div>
+        <div class="card"><img src="C:\Users\HONEY\OneDrive\Pictures\Camera Roll\IMG-20250301-WA0027.jpg"></div>
+        <div class="card"><img src="C:\Users\HONEY\OneDrive\Pictures\Camera Roll\IMG-20250301-WA0028.jpg"></div>
+        <div class="card"><img src="C:\Users\HONEY\OneDrive\Pictures\Camera Roll\IMG-20250301-WA0029.jpg"></div>
+        <div class="card"><img src="C:\Users\HONEY\OneDrive\Pictures\Camera Roll\IMG-20250301-WA0030.jpg"></div>
+        <div class="card"><img src="C:\Users\HONEY\OneDrive\Pictures\Camera Roll\IMG-20250301-WA0031.jpg"></div>
+    </div>
+
+    <button id="backBtn" onclick="window.history.back()">Go Back</button>
+
+</body>
+</html>
